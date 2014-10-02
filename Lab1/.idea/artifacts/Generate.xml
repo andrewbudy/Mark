@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Generate">
+    <output-path>$PROJECT_DIR$/out/artifacts/Generate</output-path>
+    <root id="archive" name="Lab1.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/GenerateMain/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Lab1" />
+    </root>
+  </artifact>
+</component>
