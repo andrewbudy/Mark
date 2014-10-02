@@ -13,8 +13,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Generate.fxml"));
         primaryStage.setResizable(false);
         primaryStage.setTitle("Generation of Erlang n-th Flow ");
-
-        primaryStage.setScene(new Scene(root, 400, 275));
+        Scene scene = new Scene(root, 400, 275);
+        scene.getStylesheets().add("Login.css");
+        primaryStage.setScene(scene);
 
 
         primaryStage.show();

@@ -22,6 +22,10 @@ public class Controller {
     @FXML
     private Button genBtn;
     private Scanner s = null;
+    @FXML
+    private Label kText;
+    @FXML
+    private Label lText;
     private File output_file;
 
 
@@ -40,8 +44,9 @@ public class Controller {
             s.close();
         }
         double[] d = Analyzer.Analyze(values);
-
-        kField.setText(String.format("%.2f",d[1]));
+        lText.setVisible(true);
+        kText.setVisible(true);
+        kField.setText(String.format("%.2f",d[1]));;
         lField.setText(String.format("%.2f",d[0]));
 
     }

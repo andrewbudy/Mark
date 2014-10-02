@@ -7,19 +7,19 @@
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
 
-    <Text text="Analyzer for Erlang"
+    <Text id = "welcome-text"  text="Analyzer for Erlang"
           GridPane.columnIndex="0" GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
 
-    <Label text="K - index:"
-           GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label fx:id ="kText" text="K - value:"
+           GridPane.columnIndex="0" GridPane.rowIndex="2" visible="false"/>
 
     <Label fx:id="kField"
             GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-    <Label text=" &#955; :"
-           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label fx:id ="lText" text="&#955; :"
+           GridPane.columnIndex="0" GridPane.rowIndex="3" visible="false"/>
 
     <Label fx:id="lField"
             GridPane.columnIndex="1" GridPane.rowIndex="3"/>
