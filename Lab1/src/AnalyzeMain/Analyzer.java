@@ -2,9 +2,6 @@ package AnalyzeMain;
 
 import java.util.ArrayList;
 
-/**
- * Created by andrewbudy on 02.10.14.
- */
 public class Analyzer {
 
     public static double[] Analyze(ArrayList<Double> arr){

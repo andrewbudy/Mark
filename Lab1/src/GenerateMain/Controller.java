@@ -3,7 +3,7 @@ package GenerateMain;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
+
 
 import javafx.event.ActionEvent;
 import javafx.stage.FileChooser;
@@ -13,11 +13,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Controller {
 
-    @FXML
-    private Text action_target;
+
     @FXML
     private TextField nField;
     @FXML
@@ -40,7 +40,7 @@ public class Controller {
         try {
             bw = new BufferedWriter(new FileWriter(output_file));
             for (int i = 0; i < n; i++) {
-                bw.write(String.format( "%.2f", values.get(i)) + " ");
+                bw.write(String.format(Locale.ENGLISH,"%.2f",values.get(i)) + " ");
                 if ((i+1)%10 == 0) bw.write(eol);
             }
         } catch (IOException e) {
